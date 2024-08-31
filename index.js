@@ -29,6 +29,9 @@ app.use(
 
 app.use(express.urlencoded({ extended: true }));
 app.use("/public", express.static("public"));
+app.set("view engine", "ejs");
+app.set("views", "views");
+
 
 app.get("/", (req, res, next) => {
   res.render("home.ejs");
