@@ -34,7 +34,7 @@ app.set("views", "views");
 
 
 app.get("/", (req, res, next) => {
-  res.render("home.ejs");
+  res.render("home");
 });
 app.use("/auth", authRouter);
 app.use("/message", messageRouter);
