@@ -1,0 +1,25 @@
+{
+  "name": "saraha-mvc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.5.4",
+    "qrcode": "^1.5.4"
+  }
+}
