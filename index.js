@@ -1,5 +1,6 @@
 import express from "express";
 import session from "express-session";
+import cors from "cors"
 import MongoSession from "connect-mongodb-session";
 import { connectionDb } from "./database/dbConnection.js";
 import authRouter from "./src/modules/auth/auth.router.js";
@@ -9,8 +10,9 @@ import { globalError } from "./src/utils/catchError.js";
 
 const MongoDBStore = MongoSession(session);
 const app = express();
-const port = 3000;
+const port =process.env.PORT || 3000;
 connectionDb();
+app.use(cors());
 
 const store = new MongoDBStore({
   uri: process.env.MONGODB_ATLAS,

@@ -8,3 +8,5 @@ export const connectionDb = () =>
     .catch((err) => {
       console.log("fail to connect...");
     });
+    
+connectionDb()
